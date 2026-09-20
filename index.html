@@ -1,184 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal profile webpage of Sahrish Yaseen">
-    <title>Sahrish Yaseen | Full-Stack Web Developer</title>
+    <meta name="description" content="Sahrish Yaseen — Full-Stack Web Developer portfolio.">
+    <title>Sahrish Yaseen — Full-Stack Web Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
-        <h1>Sahrish Yaseen</h1>
-        <p>Full-Stack Web Developer</p>
-        <p>BS Information Technology Student</p>
-    </header>
+    <nav class="navbar" aria-label="Primary navigation">
+        <div class="container nav-wrap">
+            <a class="logo" href="#home" aria-label="Sahrish Yaseen home">
+                <span>SY</span>
+            </a>
 
-    <nav aria-label="Main Navigation">
-        <h2>Navigation</h2>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+
+            <a class="nav-contact" href="#contact">Let's Talk <span>↗</span></a>
+        </div>
     </nav>
 
-    <main>
+    <header class="hero" id="home">
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
 
-        <section id="about">
-            <h2>About Me</h2>
+        <div class="container hero-inner">
+            <div class="hero-badge">
+                <span class="status-dot"></span>
+                Available for opportunities
+            </div>
 
-            <article>
-                <h3>Who I Am</h3>
-                <p>
-                    My name is Sahrish Yaseen. I am a BS Information Technology
-                    student with a strong interest in Full-Stack Web Development.
-                    I enjoy building practical web applications and learning
-                    modern technologies.
-                </p>
+            <p class="hero-small">Hello, I'm</p>
+            <h1>Sahrish <span>Yaseen</span></h1>
 
-                <p>
-                    My goal is to become a professional Full-Stack Web Developer
-                    and create useful digital solutions for real-world problems.
-                </p>
-            </article>
+            <h2>Full-Stack Web Developer</h2>
+
+            <p class="hero-text">
+                I build clean, responsive and user-focused web applications
+                using modern frontend and backend technologies.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-dark">View My Work <span>↗</span></a>
+                <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-label">01 — About Me</div>
+
+                <div class="about-layout">
+                    <div class="section-title">
+                        <h2 id="about-title">Turning ideas into<br><em>digital experiences.</em></h2>
+                    </div>
+
+                    <div class="about-content">
+                        <p class="lead">
+                            I am a BS Information Technology student with a strong
+                            interest in Full-Stack Web Development.
+                        </p>
+                        <p>
+                            I enjoy building practical web applications that are
+                            clean, responsive and easy to use. My goal is to grow
+                            into a professional Full-Stack Web Developer and create
+                            useful digital solutions for real-world problems.
+                        </p>
+
+                        <div class="mini-stats">
+                            <div>
+                                <strong>2022</strong>
+                                <span>Started IT Journey</span>
+                            </div>
+                            <div>
+                                <strong>2026</strong>
+                                <span>Graduation Year</span>
+                            </div>
+                            <div>
+                                <strong>10+</strong>
+                                <span>Core Technologies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
+        <section class="section skills" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-top">
+                    <div>
+                        <div class="section-label">02 — My Toolkit</div>
+                        <h2 id="skills-title">Skills I work with.</h2>
+                    </div>
+                    <p>Technologies I use to design, develop and manage modern web applications.</p>
+                </div>
 
-            <article>
-                <h3>Technical Skills</h3>
-
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>PHP</li>
-                    <li>Laravel</li>
-                    <li>MySQL</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
+                <ul class="skills-list" aria-label="Technical skills">
+                    <li><span>01</span> HTML5</li>
+                    <li><span>02</span> CSS3</li>
+                    <li><span>03</span> JavaScript</li>
+                    <li><span>04</span> PHP</li>
+                    <li><span>05</span> Laravel</li>
+                    <li><span>06</span> MySQL</li>
+                    <li><span>07</span> React</li>
+                    <li><span>08</span> Node.js</li>
+                    <li><span>09</span> Git</li>
+                    <li><span>10</span> GitHub</li>
                 </ul>
-            </article>
+            </div>
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
+        <section class="section education" id="education" aria-labelledby="education-title">
+            <div class="container narrow">
+                <div class="section-label">03 — Education</div>
+                <h2 id="education-title">Academic journey.</h2>
 
-            <article>
-                <h3>BS Information Technology</h3>
-                <p>
-                    Govt. Graduate College, Civil Lines, Sheikhupura
-                </p>
-                <p>
-                    University of the Punjab, Lahore
-                </p>
-                <p>Session: 2022 - 2026</p>
-            </article>
+                <article class="education-card">
+                    <div class="education-year">2022<br><span>2026</span></div>
+                    <div class="education-info">
+                        <p class="eyebrow">Bachelor's Degree</p>
+                        <h3>BS Information Technology</h3>
+                        <p>Govt. Graduate College, Civil Lines, Sheikhupura</p>
+                        <p>University of the Punjab, Lahore</p>
+                    </div>
+                    <div class="education-arrow">↗</div>
+                </article>
+            </div>
         </section>
 
-        <section id="experience">
-            <h2>Experience</h2>
+        <section class="section experience" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="section-top">
+                    <div>
+                        <div class="section-label">04 — Experience</div>
+                        <h2 id="experience-title">Learning by building.</h2>
+                    </div>
+                </div>
 
-            <article>
-                <h3>AUREX Full-Stack Engineering Internship</h3>
-                <p>
-                    Currently participating in the AUREX Full-Stack Engineering
-                    Internship and developing practical skills in web development,
-                    Git, GitHub and HTML5.
-                </p>
-            </article>
+                <div class="experience-list">
+                    <article class="experience-item">
+                        <div class="experience-number">01</div>
+                        <div class="experience-main">
+                            <p class="eyebrow">Current Internship</p>
+                            <h3>AUREX Full-Stack Engineering Internship</h3>
+                            <p>
+                                Currently participating in the AUREX Full-Stack Engineering
+                                Internship and strengthening practical skills in frontend
+                                development, Git, GitHub and modern web development.
+                            </p>
+                        </div>
+                        <span class="experience-tag">2026</span>
+                    </article>
 
-            <article>
-                <h3>Web Development Projects</h3>
-                <p>
-                    Developed academic and personal projects using Laravel,
-                    PHP, MySQL, JavaScript and modern web development tools.
-                </p>
-            </article>
+                    <article class="experience-item">
+                        <div class="experience-number">02</div>
+                        <div class="experience-main">
+                            <p class="eyebrow">Development Work</p>
+                            <h3>Web Development Projects</h3>
+                            <p>
+                                Developed academic and personal projects using Laravel,
+                                PHP, MySQL, JavaScript and modern web development tools.
+                            </p>
+                        </div>
+                        <span class="experience-tag">Projects</span>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+        <section class="section projects" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-top">
+                    <div>
+                        <div class="section-label">05 — Selected Work</div>
+                        <h2 id="projects-title">Things I've built.</h2>
+                    </div>
+                    <p>Academic and personal projects created to solve practical problems.</p>
+                </div>
 
-            <article>
-                <h3>Salon Appointment Scheduler</h3>
-                <p>
-                    A web-based salon appointment booking system designed to
-                    manage clients, services, stylists and appointments.
-                </p>
-            </article>
+                <div class="project-grid">
+                    <article class="project-card project-large">
+                        <div class="project-meta">
+                            <span>01</span>
+                            <span>Laravel · PHP · MySQL</span>
+                        </div>
+                        <div>
+                            <h3>Salon Appointment<br><em>Scheduler</em></h3>
+                            <p>
+                                A web-based salon appointment booking system designed
+                                to manage clients, services, stylists and appointments.
+                            </p>
+                        </div>
+                        <div class="project-link">View project <span>↗</span></div>
+                    </article>
 
-            <article>
-                <h3>AI Resume Analyzer</h3>
-                <p>
-                    An AI-powered web application designed to analyze resumes
-                    and provide useful feedback based on job requirements.
-                </p>
-            </article>
+                    <article class="project-card project-light">
+                        <div class="project-meta">
+                            <span>02</span>
+                            <span>AI · Web App</span>
+                        </div>
+                        <div>
+                            <h3>AI Resume<br><em>Analyzer</em></h3>
+                            <p>
+                                An AI-powered application designed to analyze resumes
+                                and provide useful feedback based on job requirements.
+                            </p>
+                        </div>
+                        <div class="project-link">View project <span>↗</span></div>
+                    </article>
 
-            <article>
-                <h3>E-Commerce Web Application</h3>
-                <p>
-                    A full-stack e-commerce application with product management,
-                    shopping cart, wishlist, checkout and admin features.
-                </p>
-            </article>
+                    <article class="project-card project-outline">
+                        <div class="project-meta">
+                            <span>03</span>
+                            <span>Full-Stack · E-Commerce</span>
+                        </div>
+                        <div>
+                            <h3>E-Commerce<br><em>Web Application</em></h3>
+                            <p>
+                                A full-stack e-commerce application with product management,
+                                shopping cart, wishlist, checkout and admin features.
+                            </p>
+                        </div>
+                        <div class="project-link">View project <span>↗</span></div>
+                    </article>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-inner">
+                <div class="contact-heading">
+                    <div class="section-label">06 — Contact</div>
+                    <h2 id="contact-title">Let's build something<br><em>great together.</em></h2>
+                    <p>Have an idea, project or opportunity? I'd love to hear from you.</p>
+                </div>
 
-            <form action="#" method="post">
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                        </div>
+                    </div>
 
-                <p>
-                    <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name" required>
-                </p>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can I help?" required>
+                    </div>
 
-                <p>
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" required>
-                </p>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me a little about your idea..." required></textarea>
+                    </div>
 
-                <p>
-                    <label for="subject">Subject:</label><br>
-                    <input type="text" id="subject" name="subject" required>
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="6" cols="40"
-                        required></textarea>
-                </p>
-
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
-
-            </form>
+                    <button class="submit-btn" type="submit">Send Message <span>↗</span></button>
+                </form>
+            </div>
         </section>
-
     </main>
 
     <footer>
-        <p>
-            &copy; 2026 Sahrish Yaseen. All Rights Reserved.
-        </p>
-
-        <p>
-            AUREX Full-Stack Engineering Internship - Week 1
-        </p>
+        <div class="container footer-inner">
+            <a class="footer-logo" href="#home">SY<span>.</span></a>
+            <p>© 2026 Sahrish Yaseen. All Rights Reserved.</p>
+            <p>AUREX Full-Stack Engineering Internship · Week 3</p>
+        </div>
     </footer>
-
 </body>
-
 </html>
