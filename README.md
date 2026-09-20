@@ -39,11 +39,11 @@ portfolio/
 
 ## Live Website
 
-[View Live Portfolio](portfolio-black-gamma-7kfxv2o6ec.vercel.app)
+[View Live Portfolio](https://portfolio-black-gamma-7kfxv2o6ec.vercel.app)
 
 ## GitHub Repository
 
-[View Source Code]()
+[View Source Code](https://github.com/Sahrish351/aurex-web-internship-sahrish-yaseen)
 
 ## Internship
 
